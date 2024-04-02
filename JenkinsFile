@@ -1,0 +1,9 @@
+node("yasha") {
+    stage("clone") {
+        git branch: 'main', url: 'https://github.com/Yasha12345656786/Lesson7.git'
+    }
+    stage("execute") {
+        bat "dir"
+        bat "C:\\Users\\X\\PycharmProjects\\Lesson7\\main.py"
+    }
+}
