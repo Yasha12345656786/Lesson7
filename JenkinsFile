@@ -1,3 +1,4 @@
+properties([pipelineTriggers([pollSCM('* * * * *')])])
 node("yasha") {
     stage("clone") {
         git branch: 'main', url: 'https://github.com/Yasha12345656786/Lesson7.git'
